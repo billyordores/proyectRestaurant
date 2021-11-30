@@ -1,0 +1,10 @@
+C:\Users\becario\source\repos\restaurantApp\restaurantApp\bin\Debug\restaurantApp.exe.config
+C:\Users\becario\source\repos\restaurantApp\restaurantApp\bin\Debug\restaurantApp.exe
+C:\Users\becario\source\repos\restaurantApp\restaurantApp\bin\Debug\restaurantApp.pdb
+C:\Users\becario\source\repos\restaurantApp\restaurantApp\obj\Debug\client.csproj.AssemblyReference.cache
+C:\Users\becario\source\repos\restaurantApp\restaurantApp\obj\Debug\restaurantApp.Form1.resources
+C:\Users\becario\source\repos\restaurantApp\restaurantApp\obj\Debug\restaurantApp.Properties.Resources.resources
+C:\Users\becario\source\repos\restaurantApp\restaurantApp\obj\Debug\client.csproj.GenerateResource.cache
+C:\Users\becario\source\repos\restaurantApp\restaurantApp\obj\Debug\client.csproj.CoreCompileInputs.cache
+C:\Users\becario\source\repos\restaurantApp\restaurantApp\obj\Debug\restaurantApp.exe
+C:\Users\becario\source\repos\restaurantApp\restaurantApp\obj\Debug\restaurantApp.pdb
