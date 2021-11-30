@@ -8,3 +8,7 @@ C:\Users\becario\source\repos\restaurantApp\restaurantApp\obj\Debug\client.cspro
 C:\Users\becario\source\repos\restaurantApp\restaurantApp\obj\Debug\client.csproj.CoreCompileInputs.cache
 C:\Users\becario\source\repos\restaurantApp\restaurantApp\obj\Debug\restaurantApp.exe
 C:\Users\becario\source\repos\restaurantApp\restaurantApp\obj\Debug\restaurantApp.pdb
+C:\Users\becario\source\repos\restaurantApp\restaurantApp\obj\Debug\restaurantApp.carta.resources
+C:\Users\becario\source\repos\restaurantApp\restaurantApp\obj\Debug\restaurantApp.menu.resources
+C:\Users\becario\source\repos\restaurantApp\restaurantApp\obj\Debug\restaurantApp.pedidos.resources
+C:\Users\becario\source\repos\restaurantApp\restaurantApp\obj\Debug\restaurantApp.principal.resources
