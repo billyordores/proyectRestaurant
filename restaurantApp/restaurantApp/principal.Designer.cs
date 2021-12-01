@@ -69,7 +69,7 @@ namespace restaurantApp
             // pictureBox8
             // 
             this.pictureBox8.Image = global::restaurantApp.Properties.Resources.comida2;
-            this.pictureBox8.Location = new System.Drawing.Point(365, 270);
+            this.pictureBox8.Location = new System.Drawing.Point(382, 270);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(291, 167);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

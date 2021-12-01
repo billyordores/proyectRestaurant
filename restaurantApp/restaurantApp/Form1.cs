@@ -50,15 +50,19 @@ namespace restaurantApp
         private void openPanel(object panelOne) {
             if (this.panelConteiner.Controls.Count>0) {
                 
-                this.panelConteiner.Controls.RemoveAt(2);
+                this.panelConteiner.Controls.RemoveAt(3);
             }
+            this.pictureWelcome.Visible = false;
+            this.labelWelcome.Visible = false;
+            this.labelTraductionTitle.Visible = false;
+            this.labelWelcome1.Visible = false;
             Form pOne = panelOne as Form;
             pOne.TopLevel = false;
             pOne.Dock = DockStyle.Fill;
             this.panelConteiner.Controls.Add(pOne);
             this.panelConteiner.Tag = pOne;
-            this.pictureWelcome.Visible = false;
-            this.labelWelcome.Visible = false;
+            
+            
 
             pOne.Show();
         }
@@ -86,6 +90,16 @@ namespace restaurantApp
         private void button4_Click(object sender, EventArgs e)
         {
             openPanel(new pedidos());
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox7_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

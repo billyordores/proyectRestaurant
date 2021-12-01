@@ -27,3 +27,17 @@ C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaura
 C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\client.csproj.CoreCompileInputs.cache
 C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.exe
 C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.pdb
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\restaurantApp.exe.config
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\restaurantApp.exe
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\restaurantApp.pdb
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\client.csproj.AssemblyReference.cache
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.carta.resources
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.Form1.resources
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.menu.resources
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.pedidos.resources
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.principal.resources
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.Properties.Resources.resources
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\client.csproj.GenerateResource.cache
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\client.csproj.CoreCompileInputs.cache
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.exe
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.pdb

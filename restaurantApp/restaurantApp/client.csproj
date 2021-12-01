@@ -152,5 +152,20 @@
   <ItemGroup>
     <None Include="Resources\logoRes.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabeza-de-leon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAPTURAWELCOME.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FUNGZAO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\din-tai-fung.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
