@@ -17,7 +17,11 @@ namespace restaurantApp
         double optionThree = 1.75;
         double optionFour = 1.80;
         double optionFive = 2.36;
-
+        double optionSix = 6.50;
+        double optionSeven = 6.35;
+        double optionEight = 5.25;
+        double optionNine = 6.00;
+        double optionTen = 8.45;
         public carta()
         {
             InitializeComponent();
@@ -182,7 +186,177 @@ namespace restaurantApp
             
         }
         private void sumaTotal() {
-             labelCountTotal.Text = $"{optionOne * Convert.ToDouble(labelCountOne.Text) + optionTwo * Convert.ToDouble(labelCountTwo.Text) +  optionThree * Convert.ToDouble(labelCountThree.Text) + optionFour * Convert.ToDouble(labelCountFour.Text) + optionFive * Convert.ToDouble(labelCountFive.Text)}";
+             labelCountTotal.Text = $"{optionOne * Convert.ToDouble(labelCountOne.Text) + optionTwo * Convert.ToDouble(labelCountTwo.Text) +  optionThree * Convert.ToDouble(labelCountThree.Text) + optionFour * Convert.ToDouble(labelCountFour.Text) + optionFive * Convert.ToDouble(labelCountFive.Text) + optionSix * Convert.ToDouble(labelCountSix.Text) + optionSeven * Convert.ToDouble(labelCountSeven.Text) + optionEight * Convert.ToDouble(labelCountEight.Text) + optionNine * Convert.ToDouble(labelCountNine.Text) + optionTen * Convert.ToDouble(labelCountTen.Text)}";
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox11_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox13_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox13_Paint(object sender, PaintEventArgs e)
+        {
+            GroupBox box = sender as GroupBox;
+            DrawGroupBox(box, e.Graphics, Color.Transparent, Color.Transparent);
+        }
+
+        private void groupBox17_Paint(object sender, PaintEventArgs e)
+        {
+            GroupBox box = sender as GroupBox;
+            DrawGroupBox(box, e.Graphics, Color.Transparent, Color.Transparent);
+        }
+
+        private void groupBox21_Paint(object sender, PaintEventArgs e)
+        {
+            GroupBox box = sender as GroupBox;
+            DrawGroupBox(box, e.Graphics, Color.Transparent, Color.Transparent);
+        }
+
+        private void groupBox19_Paint(object sender, PaintEventArgs e)
+        {
+            GroupBox box = sender as GroupBox;
+            DrawGroupBox(box, e.Graphics, Color.Transparent, Color.Transparent);
+        }
+
+        private void groupBox15_Paint(object sender, PaintEventArgs e)
+        {
+            GroupBox box = sender as GroupBox;
+            DrawGroupBox(box, e.Graphics, Color.Transparent, Color.Transparent);
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            restaCount(labelCountSix);
+            sumaTotal();
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            sumaCount(labelCountSix);
+            sumaTotal();
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            restaCount(labelCountSeven);
+            sumaTotal();
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            sumaCount(labelCountSeven);
+            sumaTotal();
+        }
+
+        private void button38_Click(object sender, EventArgs e)
+        {
+            restaCount(labelCountEight);
+            sumaTotal();
+        }
+
+        private void button37_Click(object sender, EventArgs e)
+        {
+            sumaCount(labelCountEight);
+            sumaTotal();
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+            sumaCount(labelCountNine);
+            sumaTotal();
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            sumaCount(labelCountTen);
+            sumaTotal();
+        }
+
+        private void button34_Click(object sender, EventArgs e)
+        {
+            restaCount(labelCountNine);
+            sumaTotal();
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            restaCount(labelCountTen);
+            sumaTotal();
+        }
+
+        private void label65_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button42_Click(object sender, EventArgs e)
+        {
+            restaCount(labelCountEleven);
+            sumaTotal();
+        }
+
+        private void button50_Click(object sender, EventArgs e)
+        {
+            restaCount(labelCountTwelve);
+            sumaTotal();
+        }
+
+        private void button58_Click(object sender, EventArgs e)
+        {
+            restaCount(labelCountThirteen);
+            sumaTotal();
+        }
+
+        private void button54_Click(object sender, EventArgs e)
+        {
+            restaCount(labelCountFourteen);
+            sumaTotal();
+        }
+
+        private void button46_Click(object sender, EventArgs e)
+        {
+            restaCount(labelCountFifteen);
+            sumaTotal();
+        }
+
+        private void button45_Click(object sender, EventArgs e)
+        {
+            sumaCount(labelCountFifteen);
+            sumaTotal();
+        }
+
+        private void button53_Click(object sender, EventArgs e)
+        {
+            sumaCount(labelCountFourteen);
+            sumaTotal();
+        }
+
+        private void button57_Click(object sender, EventArgs e)
+        {
+            sumaCount(labelCountThirteen);
+            sumaTotal();
+        }
+
+        private void button49_Click(object sender, EventArgs e)
+        {
+            sumaCount(labelCountTwelve);
+            sumaTotal();
+        }
+
+        private void button41_Click(object sender, EventArgs e)
+        {
+            sumaCount(labelCountEleven);
+            sumaTotal();
         }
     }
 }
