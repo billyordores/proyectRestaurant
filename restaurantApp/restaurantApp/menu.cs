@@ -54,7 +54,7 @@ namespace restaurantApp
 
         private void groupBoxEntrantes_Enter(object sender, EventArgs e)
         {
-           
+            
         }
 
         private void radioButton10_CheckedChanged(object sender, EventArgs e)
@@ -68,6 +68,41 @@ namespace restaurantApp
         }
 
         private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            Console.WriteLine( groupMenuSegundo.Text);
+        }
+
+        private void radioButton20_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }

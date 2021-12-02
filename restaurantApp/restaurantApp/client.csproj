@@ -167,5 +167,20 @@
   <ItemGroup>
     <None Include="Resources\din-tai-fung.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\postreChino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\postreChino1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\postreChino2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\postreChino21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\postreChino3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

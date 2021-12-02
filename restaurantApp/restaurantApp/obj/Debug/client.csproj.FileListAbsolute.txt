@@ -41,3 +41,17 @@ C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj
 C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\client.csproj.CoreCompileInputs.cache
 C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.exe
 C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.pdb
+C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en Paralelo\gitProyect\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\restaurantApp.exe.config
+C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en Paralelo\gitProyect\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\restaurantApp.exe
+C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en Paralelo\gitProyect\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\restaurantApp.pdb
+C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en Paralelo\gitProyect\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\client.csproj.AssemblyReference.cache
+C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en Paralelo\gitProyect\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.carta.resources
+C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en Paralelo\gitProyect\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.Form1.resources
+C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en Paralelo\gitProyect\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.menu.resources
+C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en Paralelo\gitProyect\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.pedidos.resources
+C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en Paralelo\gitProyect\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.principal.resources
+C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en Paralelo\gitProyect\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.Properties.Resources.resources
+C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en Paralelo\gitProyect\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\client.csproj.GenerateResource.cache
+C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en Paralelo\gitProyect\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\client.csproj.CoreCompileInputs.cache
+C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en Paralelo\gitProyect\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.exe
+C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en Paralelo\gitProyect\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.pdb
