@@ -22,8 +22,11 @@ namespace restaurantApp
         double optionEight = 5.25;
         double optionNine = 6.00;
         double optionTen = 8.45;
+        
+        
         public carta()
         {
+            
             InitializeComponent();
         }
 
@@ -196,7 +199,7 @@ namespace restaurantApp
 
         private void groupBox11_Enter(object sender, EventArgs e)
         {
-
+            
         }
 
         private void groupBox13_Enter(object sender, EventArgs e)
@@ -357,6 +360,16 @@ namespace restaurantApp
         {
             sumaCount(labelCountEleven);
             sumaTotal();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void groupBox56_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
