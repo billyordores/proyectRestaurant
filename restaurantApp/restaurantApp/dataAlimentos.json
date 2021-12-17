@@ -1,0 +1,44 @@
+﻿  [
+    {
+      "id": 1,
+      "nombre": "rabas",
+      "precio": 1.23,
+      "tipo_servicio": "menu",
+      "tipos_platillo": "entrante"
+    },
+    {
+      "id": 2,
+      "nombre": "pollo",
+      "precio": 6.65,
+      "tipo_servicio": "menu",
+      "tipos_platillo": "compartir"
+    },
+    {
+      "id": 3,
+      "nombre": "res",
+      "precio": 7.65,
+      "tipo_servicio": "menu",
+      "tipos_platillo": "carne"
+    },
+    {
+      "id": 4,
+      "nombre": "sopa de pollo",
+      "precio": 4.65,
+      "tipo_servicio": "menu",
+      "tipos_platillo": "Sopa"
+    },
+    {
+      "id": 5,
+      "nombre": "arroz con leche",
+      "precio": 6.65,
+      "tipo_servicio": "menu",
+      "tipos_platillo": "postre"
+    },
+    {
+      "id": 6,
+      "nombre": "cerveza",
+      "precio": 1.65,
+      "tipo_servicio": "menu",
+      "tipos_platillo": "bebida"
+    }
+  ]

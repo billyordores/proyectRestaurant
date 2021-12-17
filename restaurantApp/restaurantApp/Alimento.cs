@@ -8,37 +8,15 @@ namespace restaurantApp
 {
     class Alimento
     {
-        int id;
-        string nombre;
-        string tipo_alimento;
-        double precio;
+        public int id { get; set; }
+        public string nombre { get; set; }
+        public string tipo_servicio { get; set; }
+        public string tipo_platillo { get; set; }
+        public double precio { get; set; }
         //int cantidad;
 
-        public Alimento(string nombre, double precio) {
-            this.nombre = nombre;
-            this.precio = precio;
+        public Alimento() {
         }
-        public double getPrecio() {
-            return precio;
-        }        
-        public string getTipo_alimento() {
-            return tipo_alimento;
-        }
-        public void setTipo_alimento(string tipo_alimento) {
-            this.tipo_alimento = tipo_alimento;
-        }
-        public string getNombre() {
-            return nombre;
-        }
-        public int getId() {
-            return id;        
-        }
-       /** public void setCantidad(int cantidad) {
-            this.cantidad = cantidad;
-        }
-        public int getCantidad() {
-            return cantidad;
-        }
-        **/
+        
     }
 }

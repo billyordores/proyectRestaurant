@@ -74,7 +74,7 @@ namespace restaurantApp
             this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBoxEM = new System.Windows.Forms.GroupBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.label27 = new System.Windows.Forms.Label();
@@ -86,6 +86,7 @@ namespace restaurantApp
             this.radioButton19 = new System.Windows.Forms.RadioButton();
             this.radioButton20 = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
+            this.labelControlMenu = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -98,7 +99,7 @@ namespace restaurantApp
             this.groupMenuSegundo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.groupBox4.SuspendLayout();
+            this.groupBoxEM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SuspendLayout();
@@ -107,10 +108,9 @@ namespace restaurantApp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(352, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(264, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 69);
+            this.label1.Size = new System.Drawing.Size(145, 55);
             this.label1.TabIndex = 0;
             this.label1.Text = "Menú";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -118,22 +118,22 @@ namespace restaurantApp
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Javanese Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(327, 580);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(245, 471);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(259, 62);
+            this.button1.Size = new System.Drawing.Size(194, 50);
             this.button1.TabIndex = 2;
             this.button1.Text = "Hacer Pedido :)";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(428, 76);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(321, 62);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(43, 20);
+            this.label12.Size = new System.Drawing.Size(38, 16);
             this.label12.TabIndex = 3;
             this.label12.Text = "菜单";
             this.label12.Click += new System.EventHandler(this.label12_Click);
@@ -147,10 +147,9 @@ namespace restaurantApp
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(639, 53);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(479, 43);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(45, 25);
+            this.label13.Size = new System.Drawing.Size(36, 20);
             this.label13.TabIndex = 5;
             this.label13.Text = "20€";
             this.label13.Click += new System.EventHandler(this.label13_Click);
@@ -159,20 +158,18 @@ namespace restaurantApp
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(746, 53);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(560, 43);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(56, 25);
+            this.label14.Size = new System.Drawing.Size(45, 20);
             this.label14.TabIndex = 7;
             this.label14.Text = "¥144";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::restaurantApp.Properties.Resources.cabeza_de_leon;
-            this.pictureBox3.Location = new System.Drawing.Point(113, 36);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Location = new System.Drawing.Point(85, 29);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(85, 68);
+            this.pictureBox3.Size = new System.Drawing.Size(64, 55);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
@@ -180,10 +177,9 @@ namespace restaurantApp
             // pictureBox2
             // 
             this.pictureBox2.Image = global::restaurantApp.Properties.Resources.circulo;
-            this.pictureBox2.Location = new System.Drawing.Point(724, 22);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(543, 18);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(104, 91);
+            this.pictureBox2.Size = new System.Drawing.Size(78, 74);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -192,10 +188,9 @@ namespace restaurantApp
             // pictureBox1
             // 
             this.pictureBox1.Image = global::restaurantApp.Properties.Resources.circulo;
-            this.pictureBox1.Location = new System.Drawing.Point(607, 22);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(455, 18);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(109, 91);
+            this.pictureBox1.Size = new System.Drawing.Size(82, 74);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -210,11 +205,12 @@ namespace restaurantApp
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.groupBox4);
+            this.panel1.Controls.Add(this.groupBoxEM);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(33, 141);
+            this.panel1.Location = new System.Drawing.Point(25, 115);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(839, 407);
+            this.panel1.Size = new System.Drawing.Size(629, 331);
             this.panel1.TabIndex = 9;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
@@ -222,10 +218,9 @@ namespace restaurantApp
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(155, 24);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(116, 20);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 24);
+            this.label11.Size = new System.Drawing.Size(63, 18);
             this.label11.TabIndex = 36;
             this.label11.Text = "(初学者)";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -245,21 +240,18 @@ namespace restaurantApp
             this.groupBox3.Controls.Add(this.radioButton15);
             this.groupBox3.Controls.Add(this.radioButton16);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(27, 1204);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Location = new System.Drawing.Point(20, 978);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(758, 284);
+            this.groupBox3.Size = new System.Drawing.Size(568, 231);
             this.groupBox3.TabIndex = 35;
             this.groupBox3.TabStop = false;
             // 
             // pictureBox10
             // 
             this.pictureBox10.Image = global::restaurantApp.Properties.Resources.din_tai_fung;
-            this.pictureBox10.Location = new System.Drawing.Point(465, 150);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox10.Location = new System.Drawing.Point(349, 122);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(191, 90);
+            this.pictureBox10.Size = new System.Drawing.Size(143, 73);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 16;
             this.pictureBox10.TabStop = false;
@@ -267,10 +259,9 @@ namespace restaurantApp
             // pictureBox11
             // 
             this.pictureBox11.Image = global::restaurantApp.Properties.Resources.FUNGZAO;
-            this.pictureBox11.Location = new System.Drawing.Point(465, 23);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox11.Location = new System.Drawing.Point(349, 19);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(191, 90);
+            this.pictureBox11.Size = new System.Drawing.Size(143, 73);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 15;
             this.pictureBox11.TabStop = false;
@@ -279,10 +270,9 @@ namespace restaurantApp
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(19, 238);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Location = new System.Drawing.Point(14, 193);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(38, 18);
+            this.label23.Size = new System.Drawing.Size(31, 15);
             this.label23.TabIndex = 8;
             this.label23.Text = "蛇酒";
             // 
@@ -290,10 +280,9 @@ namespace restaurantApp
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(19, 185);
-            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Location = new System.Drawing.Point(14, 150);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(38, 18);
+            this.label24.Size = new System.Drawing.Size(31, 15);
             this.label24.TabIndex = 7;
             this.label24.Text = "啤酒";
             // 
@@ -301,10 +290,9 @@ namespace restaurantApp
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(19, 117);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Location = new System.Drawing.Point(14, 95);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(38, 18);
+            this.label25.Size = new System.Drawing.Size(31, 15);
             this.label25.TabIndex = 6;
             this.label25.Text = "黄酒";
             // 
@@ -312,10 +300,9 @@ namespace restaurantApp
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(19, 53);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Location = new System.Drawing.Point(14, 43);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(38, 18);
+            this.label26.Size = new System.Drawing.Size(31, 15);
             this.label26.TabIndex = 5;
             this.label26.Text = "白酒";
             // 
@@ -323,10 +310,9 @@ namespace restaurantApp
             // 
             this.radioButton13.AutoSize = true;
             this.radioButton13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton13.Location = new System.Drawing.Point(22, 205);
-            this.radioButton13.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton13.Location = new System.Drawing.Point(16, 167);
             this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(185, 29);
+            this.radioButton13.Size = new System.Drawing.Size(151, 24);
             this.radioButton13.TabIndex = 4;
             this.radioButton13.TabStop = true;
             this.radioButton13.Text = "Vino de serpiente";
@@ -336,10 +322,9 @@ namespace restaurantApp
             // 
             this.radioButton14.AutoSize = true;
             this.radioButton14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton14.Location = new System.Drawing.Point(22, 150);
-            this.radioButton14.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton14.Location = new System.Drawing.Point(16, 122);
             this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(107, 29);
+            this.radioButton14.Size = new System.Drawing.Size(85, 24);
             this.radioButton14.TabIndex = 3;
             this.radioButton14.TabStop = true;
             this.radioButton14.Text = "Cerveza";
@@ -349,10 +334,9 @@ namespace restaurantApp
             // 
             this.radioButton15.AutoSize = true;
             this.radioButton15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton15.Location = new System.Drawing.Point(22, 84);
-            this.radioButton15.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton15.Location = new System.Drawing.Point(16, 68);
             this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(110, 29);
+            this.radioButton15.Size = new System.Drawing.Size(90, 24);
             this.radioButton15.TabIndex = 2;
             this.radioButton15.TabStop = true;
             this.radioButton15.Text = "Huangjiu";
@@ -362,10 +346,9 @@ namespace restaurantApp
             // 
             this.radioButton16.AutoSize = true;
             this.radioButton16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton16.Location = new System.Drawing.Point(22, 21);
-            this.radioButton16.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton16.Location = new System.Drawing.Point(16, 17);
             this.radioButton16.Name = "radioButton16";
-            this.radioButton16.Size = new System.Drawing.Size(80, 29);
+            this.radioButton16.Size = new System.Drawing.Size(65, 24);
             this.radioButton16.TabIndex = 0;
             this.radioButton16.TabStop = true;
             this.radioButton16.Text = "Baijiu";
@@ -384,11 +367,9 @@ namespace restaurantApp
             this.groupBox2.Controls.Add(this.radioButton11);
             this.groupBox2.Controls.Add(this.radioButton12);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(28, 817);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Location = new System.Drawing.Point(21, 664);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(758, 273);
+            this.groupBox2.Size = new System.Drawing.Size(568, 222);
             this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
             // 
@@ -396,10 +377,9 @@ namespace restaurantApp
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(19, 238);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Location = new System.Drawing.Point(14, 193);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(53, 18);
+            this.label19.Size = new System.Drawing.Size(43, 15);
             this.label19.TabIndex = 8;
             this.label19.Text = "唐胡鲁";
             // 
@@ -407,10 +387,9 @@ namespace restaurantApp
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(19, 185);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Location = new System.Drawing.Point(14, 150);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(53, 18);
+            this.label20.Size = new System.Drawing.Size(43, 15);
             this.label20.TabIndex = 7;
             this.label20.Text = "炸馒头";
             // 
@@ -418,10 +397,9 @@ namespace restaurantApp
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(19, 117);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Location = new System.Drawing.Point(14, 95);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(38, 18);
+            this.label21.Size = new System.Drawing.Size(31, 15);
             this.label21.TabIndex = 6;
             this.label21.Text = "汤圆";
             // 
@@ -429,10 +407,9 @@ namespace restaurantApp
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(19, 53);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Location = new System.Drawing.Point(14, 43);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(83, 18);
+            this.label22.Size = new System.Drawing.Size(67, 15);
             this.label22.TabIndex = 5;
             this.label22.Text = "美杜莎沙拉";
             // 
@@ -440,10 +417,9 @@ namespace restaurantApp
             // 
             this.radioButton9.AutoSize = true;
             this.radioButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton9.Location = new System.Drawing.Point(22, 205);
-            this.radioButton9.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton9.Location = new System.Drawing.Point(16, 167);
             this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(116, 29);
+            this.radioButton9.Size = new System.Drawing.Size(93, 24);
             this.radioButton9.TabIndex = 4;
             this.radioButton9.TabStop = true;
             this.radioButton9.Text = "Tánghúlu";
@@ -453,10 +429,9 @@ namespace restaurantApp
             // 
             this.radioButton10.AutoSize = true;
             this.radioButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton10.Location = new System.Drawing.Point(22, 150);
-            this.radioButton10.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton10.Location = new System.Drawing.Point(16, 122);
             this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(145, 29);
+            this.radioButton10.Size = new System.Drawing.Size(120, 24);
             this.radioButton10.TabIndex = 3;
             this.radioButton10.TabStop = true;
             this.radioButton10.Text = "Mántou fritos";
@@ -466,10 +441,9 @@ namespace restaurantApp
             // 
             this.radioButton11.AutoSize = true;
             this.radioButton11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton11.Location = new System.Drawing.Point(22, 84);
-            this.radioButton11.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton11.Location = new System.Drawing.Point(16, 68);
             this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(122, 29);
+            this.radioButton11.Size = new System.Drawing.Size(97, 24);
             this.radioButton11.TabIndex = 2;
             this.radioButton11.TabStop = true;
             this.radioButton11.Text = "Tāngyuán";
@@ -479,10 +453,9 @@ namespace restaurantApp
             // 
             this.radioButton12.AutoSize = true;
             this.radioButton12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton12.Location = new System.Drawing.Point(22, 21);
-            this.radioButton12.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton12.Location = new System.Drawing.Point(16, 17);
             this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(156, 29);
+            this.radioButton12.Size = new System.Drawing.Size(127, 24);
             this.radioButton12.TabIndex = 0;
             this.radioButton12.TabStop = true;
             this.radioButton12.Text = "Pastel de luna";
@@ -503,11 +476,9 @@ namespace restaurantApp
             this.groupMenuSegundo.Controls.Add(this.radioButton7);
             this.groupMenuSegundo.Controls.Add(this.radioButton8);
             this.groupMenuSegundo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupMenuSegundo.Location = new System.Drawing.Point(28, 443);
-            this.groupMenuSegundo.Margin = new System.Windows.Forms.Padding(4);
+            this.groupMenuSegundo.Location = new System.Drawing.Point(21, 360);
             this.groupMenuSegundo.Name = "groupMenuSegundo";
-            this.groupMenuSegundo.Padding = new System.Windows.Forms.Padding(4);
-            this.groupMenuSegundo.Size = new System.Drawing.Size(758, 275);
+            this.groupMenuSegundo.Size = new System.Drawing.Size(568, 223);
             this.groupMenuSegundo.TabIndex = 33;
             this.groupMenuSegundo.TabStop = false;
             this.groupMenuSegundo.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -515,10 +486,9 @@ namespace restaurantApp
             // pictureBox6
             // 
             this.pictureBox6.Image = global::restaurantApp.Properties.Resources.din_tai_fung;
-            this.pictureBox6.Location = new System.Drawing.Point(465, 150);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox6.Location = new System.Drawing.Point(349, 122);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(191, 90);
+            this.pictureBox6.Size = new System.Drawing.Size(143, 73);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 16;
             this.pictureBox6.TabStop = false;
@@ -526,10 +496,9 @@ namespace restaurantApp
             // pictureBox7
             // 
             this.pictureBox7.Image = global::restaurantApp.Properties.Resources.FUNGZAO;
-            this.pictureBox7.Location = new System.Drawing.Point(465, 23);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox7.Location = new System.Drawing.Point(349, 19);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(191, 90);
+            this.pictureBox7.Size = new System.Drawing.Size(143, 73);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 15;
             this.pictureBox7.TabStop = false;
@@ -538,10 +507,9 @@ namespace restaurantApp
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(19, 238);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(14, 193);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(38, 18);
+            this.label15.Size = new System.Drawing.Size(31, 15);
             this.label15.TabIndex = 8;
             this.label15.Text = "粽子";
             // 
@@ -549,10 +517,9 @@ namespace restaurantApp
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(19, 185);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Location = new System.Drawing.Point(14, 150);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(68, 18);
+            this.label16.Size = new System.Drawing.Size(55, 15);
             this.label16.TabIndex = 7;
             this.label16.Text = "麻婆豆腐";
             // 
@@ -560,10 +527,9 @@ namespace restaurantApp
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(19, 117);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Location = new System.Drawing.Point(14, 95);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(68, 18);
+            this.label17.Size = new System.Drawing.Size(55, 15);
             this.label17.TabIndex = 6;
             this.label17.Text = "北京烤鸭";
             // 
@@ -571,10 +537,9 @@ namespace restaurantApp
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(19, 53);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Location = new System.Drawing.Point(14, 43);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(68, 18);
+            this.label18.Size = new System.Drawing.Size(55, 15);
             this.label18.TabIndex = 5;
             this.label18.Text = "宫保鸡丁";
             // 
@@ -582,10 +547,9 @@ namespace restaurantApp
             // 
             this.radioButton5.AutoSize = true;
             this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(22, 205);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton5.Location = new System.Drawing.Point(16, 167);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(92, 29);
+            this.radioButton5.Size = new System.Drawing.Size(75, 24);
             this.radioButton5.TabIndex = 4;
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Zongzi";
@@ -595,10 +559,9 @@ namespace restaurantApp
             // 
             this.radioButton6.AutoSize = true;
             this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(22, 150);
-            this.radioButton6.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton6.Location = new System.Drawing.Point(16, 122);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(137, 29);
+            this.radioButton6.Size = new System.Drawing.Size(112, 24);
             this.radioButton6.TabIndex = 3;
             this.radioButton6.TabStop = true;
             this.radioButton6.Text = "Mapo doufu";
@@ -608,10 +571,9 @@ namespace restaurantApp
             // 
             this.radioButton7.AutoSize = true;
             this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(22, 84);
-            this.radioButton7.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton7.Location = new System.Drawing.Point(16, 68);
             this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(168, 29);
+            this.radioButton7.Size = new System.Drawing.Size(137, 24);
             this.radioButton7.TabIndex = 2;
             this.radioButton7.TabStop = true;
             this.radioButton7.Text = "El pato Pekinés";
@@ -621,10 +583,9 @@ namespace restaurantApp
             // 
             this.radioButton8.AutoSize = true;
             this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(22, 21);
-            this.radioButton8.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton8.Location = new System.Drawing.Point(16, 17);
             this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(169, 29);
+            this.radioButton8.Size = new System.Drawing.Size(138, 24);
             this.radioButton8.TabIndex = 0;
             this.radioButton8.TabStop = true;
             this.radioButton8.Text = "Pollo Gong Bao";
@@ -634,9 +595,10 @@ namespace restaurantApp
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Javanese Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(16, 375);
+            this.label10.Location = new System.Drawing.Point(12, 305);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(172, 64);
+            this.label10.Size = new System.Drawing.Size(136, 50);
             this.label10.TabIndex = 32;
             this.label10.Text = "Plato Fondo";
             // 
@@ -644,9 +606,10 @@ namespace restaurantApp
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Javanese Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(38, 1136);
+            this.label6.Location = new System.Drawing.Point(28, 923);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 64);
+            this.label6.Size = new System.Drawing.Size(88, 50);
             this.label6.TabIndex = 31;
             this.label6.Text = "Bebida";
             // 
@@ -654,42 +617,42 @@ namespace restaurantApp
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Javanese Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(25, 749);
+            this.label5.Location = new System.Drawing.Point(19, 609);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 64);
+            this.label5.Size = new System.Drawing.Size(82, 50);
             this.label5.TabIndex = 30;
             this.label5.Text = "Postre";
             // 
-            // groupBox4
+            // groupBoxEM
             // 
-            this.groupBox4.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox4.Controls.Add(this.pictureBox12);
-            this.groupBox4.Controls.Add(this.pictureBox13);
-            this.groupBox4.Controls.Add(this.label27);
-            this.groupBox4.Controls.Add(this.label28);
-            this.groupBox4.Controls.Add(this.label29);
-            this.groupBox4.Controls.Add(this.label30);
-            this.groupBox4.Controls.Add(this.radioButton17);
-            this.groupBox4.Controls.Add(this.radioButton18);
-            this.groupBox4.Controls.Add(this.radioButton19);
-            this.groupBox4.Controls.Add(this.radioButton20);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(27, 77);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(0);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(758, 272);
-            this.groupBox4.TabIndex = 29;
-            this.groupBox4.TabStop = false;
+            this.groupBoxEM.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.groupBoxEM.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxEM.Controls.Add(this.pictureBox12);
+            this.groupBoxEM.Controls.Add(this.pictureBox13);
+            this.groupBoxEM.Controls.Add(this.label27);
+            this.groupBoxEM.Controls.Add(this.label28);
+            this.groupBoxEM.Controls.Add(this.label29);
+            this.groupBoxEM.Controls.Add(this.label30);
+            this.groupBoxEM.Controls.Add(this.radioButton17);
+            this.groupBoxEM.Controls.Add(this.radioButton18);
+            this.groupBoxEM.Controls.Add(this.radioButton19);
+            this.groupBoxEM.Controls.Add(this.radioButton20);
+            this.groupBoxEM.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxEM.Location = new System.Drawing.Point(20, 63);
+            this.groupBoxEM.Margin = new System.Windows.Forms.Padding(0);
+            this.groupBoxEM.Name = "groupBoxEM";
+            this.groupBoxEM.Size = new System.Drawing.Size(568, 221);
+            this.groupBoxEM.TabIndex = 29;
+            this.groupBoxEM.TabStop = false;
+            this.groupBoxEM.Enter += new System.EventHandler(this.groupBoxEM_Enter);
             // 
             // pictureBox12
             // 
             this.pictureBox12.Image = global::restaurantApp.Properties.Resources.din_tai_fung;
-            this.pictureBox12.Location = new System.Drawing.Point(465, 150);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox12.Location = new System.Drawing.Point(349, 122);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(191, 90);
+            this.pictureBox12.Size = new System.Drawing.Size(143, 73);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 16;
             this.pictureBox12.TabStop = false;
@@ -697,10 +660,9 @@ namespace restaurantApp
             // pictureBox13
             // 
             this.pictureBox13.Image = global::restaurantApp.Properties.Resources.FUNGZAO;
-            this.pictureBox13.Location = new System.Drawing.Point(465, 23);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox13.Location = new System.Drawing.Point(349, 19);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(191, 90);
+            this.pictureBox13.Size = new System.Drawing.Size(143, 73);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 15;
             this.pictureBox13.TabStop = false;
@@ -709,10 +671,9 @@ namespace restaurantApp
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(19, 238);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Location = new System.Drawing.Point(14, 193);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(53, 18);
+            this.label27.Size = new System.Drawing.Size(43, 15);
             this.label27.TabIndex = 8;
             this.label27.Text = "大安达";
             // 
@@ -720,10 +681,9 @@ namespace restaurantApp
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(19, 185);
-            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label28.Location = new System.Drawing.Point(14, 150);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(38, 18);
+            this.label28.Size = new System.Drawing.Size(31, 15);
             this.label28.TabIndex = 7;
             this.label28.Text = "凤枣";
             // 
@@ -731,10 +691,9 @@ namespace restaurantApp
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(19, 117);
-            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label29.Location = new System.Drawing.Point(14, 95);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(68, 18);
+            this.label29.Size = new System.Drawing.Size(55, 15);
             this.label29.TabIndex = 6;
             this.label29.Text = "海藻沙拉";
             // 
@@ -742,10 +701,9 @@ namespace restaurantApp
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(19, 53);
-            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label30.Location = new System.Drawing.Point(14, 43);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(83, 18);
+            this.label30.Size = new System.Drawing.Size(67, 15);
             this.label30.TabIndex = 5;
             this.label30.Text = "美杜莎沙拉";
             // 
@@ -753,10 +711,9 @@ namespace restaurantApp
             // 
             this.radioButton17.AutoSize = true;
             this.radioButton17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton17.Location = new System.Drawing.Point(22, 205);
-            this.radioButton17.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton17.Location = new System.Drawing.Point(16, 167);
             this.radioButton17.Name = "radioButton17";
-            this.radioButton17.Size = new System.Drawing.Size(125, 29);
+            this.radioButton17.Size = new System.Drawing.Size(102, 24);
             this.radioButton17.TabIndex = 4;
             this.radioButton17.TabStop = true;
             this.radioButton17.Text = "Daan Taat";
@@ -766,10 +723,9 @@ namespace restaurantApp
             // 
             this.radioButton18.AutoSize = true;
             this.radioButton18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton18.Location = new System.Drawing.Point(22, 150);
-            this.radioButton18.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton18.Location = new System.Drawing.Point(16, 122);
             this.radioButton18.Name = "radioButton18";
-            this.radioButton18.Size = new System.Drawing.Size(117, 29);
+            this.radioButton18.Size = new System.Drawing.Size(96, 24);
             this.radioButton18.TabIndex = 3;
             this.radioButton18.TabStop = true;
             this.radioButton18.Text = "Fung Zao";
@@ -779,10 +735,9 @@ namespace restaurantApp
             // 
             this.radioButton19.AutoSize = true;
             this.radioButton19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton19.Location = new System.Drawing.Point(22, 84);
-            this.radioButton19.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton19.Location = new System.Drawing.Point(16, 68);
             this.radioButton19.Name = "radioButton19";
-            this.radioButton19.Size = new System.Drawing.Size(197, 29);
+            this.radioButton19.Size = new System.Drawing.Size(160, 24);
             this.radioButton19.TabIndex = 2;
             this.radioButton19.TabStop = true;
             this.radioButton19.Text = "Ensalada de Algas";
@@ -792,10 +747,9 @@ namespace restaurantApp
             // 
             this.radioButton20.AutoSize = true;
             this.radioButton20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton20.Location = new System.Drawing.Point(22, 21);
-            this.radioButton20.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton20.Location = new System.Drawing.Point(16, 17);
             this.radioButton20.Name = "radioButton20";
-            this.radioButton20.Size = new System.Drawing.Size(218, 29);
+            this.radioButton20.Size = new System.Drawing.Size(177, 24);
             this.radioButton20.TabIndex = 0;
             this.radioButton20.TabStop = true;
             this.radioButton20.Text = "Ensalada de Medusa";
@@ -806,19 +760,31 @@ namespace restaurantApp
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Javanese Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(18, 9);
+            this.label3.Location = new System.Drawing.Point(14, 7);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 64);
+            this.label3.Size = new System.Drawing.Size(115, 50);
             this.label3.TabIndex = 28;
             this.label3.Text = "Entrantes";
             // 
+            // labelControlMenu
+            // 
+            this.labelControlMenu.AutoSize = true;
+            this.labelControlMenu.Location = new System.Drawing.Point(22, 90);
+            this.labelControlMenu.Name = "labelControlMenu";
+            this.labelControlMenu.Size = new System.Drawing.Size(35, 13);
+            this.labelControlMenu.TabIndex = 10;
+            this.labelControlMenu.Text = "label2";
+            this.labelControlMenu.Click += new System.EventHandler(this.label2_Click_1);
+            // 
             // menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoScrollMinSize = new System.Drawing.Size(5, 4);
-            this.ClientSize = new System.Drawing.Size(917, 654);
+            this.ClientSize = new System.Drawing.Size(688, 531);
+            this.Controls.Add(this.labelControlMenu);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label14);
@@ -829,7 +795,6 @@ namespace restaurantApp
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "menu";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
@@ -848,8 +813,8 @@ namespace restaurantApp
             this.groupMenuSegundo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
+            this.groupBoxEM.ResumeLayout(false);
+            this.groupBoxEM.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
@@ -904,7 +869,7 @@ namespace restaurantApp
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBoxEM;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Label label27;
@@ -916,5 +881,6 @@ namespace restaurantApp
         private System.Windows.Forms.RadioButton radioButton19;
         private System.Windows.Forms.RadioButton radioButton20;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelControlMenu;
     }
 }

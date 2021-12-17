@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -104,6 +107,50 @@ namespace restaurantApp
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void groupBoxEM_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (System.IO.StreamReader archivo = File.OpenText(@"C:/Users/becario/Documents/git/proyectRestaurant/restaurantApp/restaurantApp/dataAlimentos.json"))
+
+            {
+                // Leemos los datos del archivo 'postre.json' desde el inicio hasta el final 
+                string json = archivo.ReadToEnd();
+
+                // Deserializamos el archivo 'postres.json'
+                List<Alimento> list = new List<Alimento>();
+                Alimento[] alimentos = new Alimento[10];
+                dynamic miarray = JsonConvert.DeserializeObject(json);
+                JArray a = JArray.Parse(json);
+                string name="";
+                int i = 1;
+                // Recorremos el array de datos del JSON 
+                foreach (var item in a)
+                {
+                    list.Add(new Alimento() {nombre = $"{item.SelectToken("nombre")}", precio=Convert.ToDouble(item.SelectToken("precio")), id= i, tipo_platillo= $"{item.SelectToken("tipo_platillo")}", tipo_servicio= $"{item.SelectToken("tipo_servicio")}" });
+                    i++;
+                }
+                foreach (Alimento value in list)
+                {
+                    name += "(" + value.nombre + " - " + value.precio + ") ";
+                }
+
+                labelControlMenu.Text =name;
+
+            }
+
+
 
         }
     }

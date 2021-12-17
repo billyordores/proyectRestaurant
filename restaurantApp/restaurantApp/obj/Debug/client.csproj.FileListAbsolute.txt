@@ -70,3 +70,6 @@ C:\Users\billy.ordores\Documents\git\proyectRestaurant\restaurantApp\restaurantA
 C:\Users\billy.ordores\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\client.csproj.CoreCompileInputs.cache
 C:\Users\billy.ordores\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.exe
 C:\Users\billy.ordores\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.pdb
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\client.csproj.CopyComplete
