@@ -73,3 +73,6 @@ C:\Users\billy.ordores\Documents\git\proyectRestaurant\restaurantApp\restaurantA
 C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\Newtonsoft.Json.dll
 C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\Newtonsoft.Json.xml
 C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\client.csproj.CopyComplete
+C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\client.csproj.CopyComplete

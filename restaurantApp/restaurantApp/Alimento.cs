@@ -12,6 +12,8 @@ namespace restaurantApp
         public string nombre { get; set; }
         public string tipo_servicio { get; set; }
         public string tipo_platillo { get; set; }
+        public int tipo_platillo_id { get; set; }
+        public int tipo_servicio_id { get; set; }
         public double precio { get; set; }
         //int cantidad;
 
