@@ -76,3 +76,31 @@ C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj
 C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\client.csproj.CopyComplete
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\Pipelines.Sockets.Unofficial.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\StackExchange.Redis.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\StackExchange.Redis.Extensions.Core.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.Buffers.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.IO.Pipelines.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.Memory.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.Threading.Channels.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\Pipelines.Sockets.Unofficial.xml
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\StackExchange.Redis.xml
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.Buffers.xml
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.IO.Pipelines.xml
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.Memory.xml
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.Threading.Channels.xml
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\obj\Debug\restaurantApp.Initial.resources

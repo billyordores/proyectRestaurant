@@ -8,13 +8,13 @@ namespace restaurantApp
 {
     class Alimento
     {
-        public int id { get; set; }
-        public string nombre { get; set; }
-        public string tipo_servicio { get; set; }
-        public string tipo_platillo { get; set; }
-        public int tipo_platillo_id { get; set; }
-        public int tipo_servicio_id { get; set; }
-        public double precio { get; set; }
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string TipoServicio { get; set; }
+        public string TipoPlatillo { get; set; }
+        public int TipoPlatilloId { get; set; }
+        public int TipoServicioId { get; set; }
+        public double Precio { get; set; }
         //int cantidad;
 
         public Alimento() {

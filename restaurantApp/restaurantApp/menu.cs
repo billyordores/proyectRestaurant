@@ -121,15 +121,130 @@ namespace restaurantApp
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async Task button1_Click(object sender, EventArgs e)
         {
-            string platilloOne="", platilloTwo="", platilloThree="", platilloFour="";
+            
+        }
+
+        private void radioButton18_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton19_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+        public void addEntrante() {
+            
+                int e=0, pf = 0, p=0, b=0;
+                int pointE=21, pointPF = 21, pointP=21, pointB=21;
+                int tabIndexE=0,tabIndexPF = 0, tabIndexP=0, tabIndexB=0;
+
+                foreach (Alimento value in controlMenu.GetAlimentos())
+                {
+                    if (value.TipoPlatilloId ==1) {
+                        RadioButton rdo = new RadioButton();
+                        rdo.AutoSize = true;
+                        rdo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        rdo.Location = new System.Drawing.Point(21, pointE);
+                        rdo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+                        rdo.Name = "RadioButtonEntrante" + e;
+                        rdo.Size = new System.Drawing.Size(218, 29);
+                        rdo.TabIndex = tabIndexE;
+                        rdo.TabStop = true;
+                        rdo.Text = value.Nombre;
+                        rdo.UseVisualStyleBackColor = true;
+
+                        this.groupBoxEM.Controls.Add(rdo);
+                        e++;
+                        tabIndexE += 1;
+                        pointE += 50;
+
+                    }
+                    if (value.TipoPlatilloId==2) {
+                         RadioButton rdo = new RadioButton();
+                         rdo.AutoSize = true;
+                         rdo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                         rdo.Location = new System.Drawing.Point(21, pointPF);
+                         rdo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+                         rdo.Name = "RadioButtonEntrante" + pf;
+                         rdo.Size = new System.Drawing.Size(218, 29);
+                         rdo.TabIndex = tabIndexPF;
+                         rdo.TabStop = true;
+                         rdo.Text = value.Nombre;
+                         rdo.UseVisualStyleBackColor = true;
+                         this.groupBoxPF.Controls.Add(rdo);
+                         pf++;
+                         tabIndexPF += 1;
+                         pointPF += 50;
+                    }
+                    if (value.TipoPlatilloId == 4)
+                    {
+                        RadioButton rdo = new RadioButton();
+                        rdo.AutoSize = true;
+                        rdo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        rdo.Location = new System.Drawing.Point(21, pointP);
+                        rdo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+                        rdo.Name = "RadioButtonEntrante" + p;
+                        rdo.Size = new System.Drawing.Size(218, 29);
+                        rdo.TabIndex = tabIndexPF;
+                        rdo.TabStop = true;
+                        rdo.Text = value.Nombre;
+                        rdo.UseVisualStyleBackColor = true;
+                        this.groupBoxP.Controls.Add(rdo);
+                        p++;
+                        tabIndexP += 1;
+                        pointP += 50;
+                    }
+                    if (value.TipoPlatilloId == 6)
+                    {
+                        RadioButton rdo = new RadioButton();
+                        rdo.AutoSize = true;
+                        rdo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        rdo.Location = new System.Drawing.Point(21, pointB);
+                        rdo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+                        rdo.Name = "RadioButtonEntrante" + b;
+                        rdo.Size = new System.Drawing.Size(218, 29);
+                        rdo.TabIndex = tabIndexPF;
+                        rdo.TabStop = true;
+                        rdo.Text = value.Nombre;
+                        rdo.UseVisualStyleBackColor = true;
+                        this.groupBoxB.Controls.Add(rdo);
+                        b++;
+                        tabIndexB += 1;
+                        pointB += 50;
+                    }
+
+
+            }            
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void buttonPM_Click(object sender, EventArgs e)
+        {
+            string platilloOne = "", platilloTwo = "", platilloThree = "", platilloFour = "";
             foreach (Control ctrl in groupBoxEM.Controls)
             {
-                if(ctrl is RadioButton)
+                if (ctrl is RadioButton)
                 {
-                    RadioButton radio = ctrl as RadioButton;             
-                    if(radio.Checked){
+                    RadioButton radio = ctrl as RadioButton;
+                    if (radio.Checked)
+                    {
                         platilloOne = radio.Text;
                         break;
                     }
@@ -178,8 +293,9 @@ namespace restaurantApp
                 MessageBox.Show("Falta seleccionar una opcion del menu", "Menu Pedido Error", MessageBoxButtons.OK, MessageBoxIcon.Question);
                 buttonPM.BackColor = Color.Red;
             }
-            else {
-                controlMenu.PostMenu( 1, platilloOne, platilloTwo, platilloThree, platilloFour,$"{DateTime.Now}", 1);
+            else
+            {
+                await controlMenu.Post(1, platilloOne, platilloTwo, platilloThree, platilloFour, DateTime.Now, 1);
                 MessageBox.Show("Pedido Realizado");
                 foreach (Control ctrl in groupBoxEM.Controls)
                 {
@@ -232,116 +348,6 @@ namespace restaurantApp
                 buttonPM.BackColor = Color.Transparent;
 
             }
-        }
-
-        private void radioButton18_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton19_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-        public void addEntrante() {
-            
-                int e=0, pf = 0, p=0, b=0;
-                int pointE=21, pointPF = 21, pointP=21, pointB=21;
-                int tabIndexE=0,tabIndexPF = 0, tabIndexP=0, tabIndexB=0;  
-                
-                
-                foreach (Alimento value in controlMenu.GetAlimentos())
-                {
-                    if (value.tipo_platillo_id==1) {
-                        RadioButton rdo = new RadioButton();
-                        rdo.AutoSize = true;
-                        rdo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                        rdo.Location = new System.Drawing.Point(21, pointE);
-                        rdo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-                        rdo.Name = "RadioButtonEntrante" + e;
-                        rdo.Size = new System.Drawing.Size(218, 29);
-                        rdo.TabIndex = tabIndexE;
-                        rdo.TabStop = true;
-                        rdo.Text = value.nombre;
-                        rdo.UseVisualStyleBackColor = true;
-
-                        this.groupBoxEM.Controls.Add(rdo);
-                        e++;
-                        tabIndexE += 1;
-                        pointE += 50;
-
-                    }
-                    if (value.tipo_platillo_id==2) {
-                         RadioButton rdo = new RadioButton();
-                         rdo.AutoSize = true;
-                         rdo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                         rdo.Location = new System.Drawing.Point(21, pointPF);
-                         rdo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-                         rdo.Name = "RadioButtonEntrante" + pf;
-                         rdo.Size = new System.Drawing.Size(218, 29);
-                         rdo.TabIndex = tabIndexPF;
-                         rdo.TabStop = true;
-                         rdo.Text = value.nombre;
-                         rdo.UseVisualStyleBackColor = true;
-                         this.groupBoxPF.Controls.Add(rdo);
-                         pf++;
-                         tabIndexPF += 1;
-                         pointPF += 50;
-                    }
-                    if (value.tipo_platillo_id == 4)
-                    {
-                        RadioButton rdo = new RadioButton();
-                        rdo.AutoSize = true;
-                        rdo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                        rdo.Location = new System.Drawing.Point(21, pointP);
-                        rdo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-                        rdo.Name = "RadioButtonEntrante" + p;
-                        rdo.Size = new System.Drawing.Size(218, 29);
-                        rdo.TabIndex = tabIndexPF;
-                        rdo.TabStop = true;
-                        rdo.Text = value.nombre;
-                        rdo.UseVisualStyleBackColor = true;
-                        this.groupBoxP.Controls.Add(rdo);
-                        p++;
-                        tabIndexP += 1;
-                        pointP += 50;
-                    }
-                    if (value.tipo_platillo_id == 6)
-                    {
-                        RadioButton rdo = new RadioButton();
-                        rdo.AutoSize = true;
-                        rdo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                        rdo.Location = new System.Drawing.Point(21, pointB);
-                        rdo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-                        rdo.Name = "RadioButtonEntrante" + b;
-                        rdo.Size = new System.Drawing.Size(218, 29);
-                        rdo.TabIndex = tabIndexPF;
-                        rdo.TabStop = true;
-                        rdo.Text = value.nombre;
-                        rdo.UseVisualStyleBackColor = true;
-                        this.groupBoxB.Controls.Add(rdo);
-                        b++;
-                        tabIndexB += 1;
-                        pointB += 50;
-                    }
-
-
-            }            
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton8_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton7_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

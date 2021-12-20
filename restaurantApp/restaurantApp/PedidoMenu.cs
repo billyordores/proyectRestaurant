@@ -6,11 +6,20 @@ using System.Threading.Tasks;
 
 namespace restaurantApp
 {
-    class PedidoMenu
-    {
-        public int mesaId { get; set; }
-        public string hora_pedido { get; set; }
-        public Pedido[] PedidoMenuAlimentos { get; set; }
 
+    public class PedidoMenu
+    {
+        public int Id { get; set; }
+        public int MesaId { get; set; }
+        public DateTime Hora_Pedido { get; set; }
+        public Pedidomenualimento[] PedidoMenuAlimentos { get; set; }
     }
+
+    public class Pedidomenualimento
+    {
+            
+        public int AlimentoId { get; set; }
+        public int MenuId { get; set; }
+    }
+
 }

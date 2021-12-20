@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace restaurantApp
 {
-    class Pedido
+
+    public class Pedido
     {
         public int alimentoId { get; set; }
         public int menuId { get; set; }
     }
+
 }
