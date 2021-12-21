@@ -181,7 +181,7 @@ namespace restaurantApp
                          tabIndexPF += 1;
                          pointPF += 50;
                     }
-                    if (value.TipoPlatilloId == 4)
+                    if (value.TipoPlatilloId == 5)
                     {
                         RadioButton rdo = new RadioButton();
                         rdo.AutoSize = true;

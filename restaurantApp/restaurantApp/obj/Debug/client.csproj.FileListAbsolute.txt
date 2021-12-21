@@ -139,3 +139,10 @@ C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaura
 C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\IKVM.OpenJDK.Util.dll
 C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\IKVM.OpenJDK.XML.API.dll
 C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\IKVM.Runtime.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\IKVM.AWT.WinForms.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\IKVM.OpenJDK.Core.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\IKVM.OpenJDK.Media.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\IKVM.OpenJDK.Text.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\IKVM.OpenJDK.Util.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\IKVM.OpenJDK.XML.API.dll
+C:\Users\becario\Documents\git\proyectRestaurant\restaurantApp\restaurantApp\bin\Debug\IKVM.Runtime.dll

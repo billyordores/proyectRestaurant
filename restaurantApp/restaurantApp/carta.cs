@@ -13,19 +13,7 @@ namespace restaurantApp
 {
     public partial class carta : Form
     {
-        double optionOne = 1.25;
-        double optionTwo = 2.25;
-        double optionThree = 1.75;
-        double optionFour = 1.80;
-        double optionFive = 2.36;
-        double optionSix = 6.50;
-        double optionSeven = 6.35;
-        double optionEight = 5.25;
-        double optionNine = 6.00;
-        double optionTen = 8.45;
-
-        string[][] list = new string[30][];
-        public decimal mesaId { get; set; }
+       public decimal mesaId { get; set; }
 
 
         public carta(decimal mesaId)
@@ -92,7 +80,9 @@ namespace restaurantApp
             }
             else
             {
+
                 count = count - 1;
+
             }
             label.Text = $"{count}";
         }
@@ -155,19 +145,19 @@ namespace restaurantApp
         private void button10_Click(object sender, EventArgs e)
         {
             restaCount(tres);
-            //sumaTotal();
+            sumaTotal();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             sumaCount(tres);
-            //sumaTotal();
+            sumaTotal();
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
             restaCount(cuatro);
-            //sumaTotal();
+            sumaTotal();
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -193,7 +183,18 @@ namespace restaurantApp
             
         }
         private void sumaTotal() {
-             //labelCountTotal.Text = $"{optionOne * Convert.ToDouble(labelCountOne.Text) + optionTwo * Convert.ToDouble(labelCountTwo.Text) +  optionThree * Convert.ToDouble(labelCountThree.Text) + optionFour * Convert.ToDouble(labelCountFour.Text) + optionFive * Convert.ToDouble(labelCountFive.Text) + optionSix * Convert.ToDouble(labelCountSix.Text) + optionSeven * Convert.ToDouble(labelCountSeven.Text) + optionEight * Convert.ToDouble(labelCountEight.Text) + optionNine * Convert.ToDouble(labelCountNine.Text) + optionTen * Convert.ToDouble(labelCountTen.Text)}";
+             labelCountTotal.Text = 
+             $"{controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(uno.Name))*Convert.ToDouble(uno.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dos.Name)) * Convert.ToDouble(dos.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(tres.Name)) * Convert.ToDouble(tres.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(cuatro.Name)) * Convert.ToDouble(cuatro.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(cinco.Name)) * Convert.ToDouble(cinco.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(seis.Name)) * Convert.ToDouble(seis.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(siete.Name)) * Convert.ToDouble(siete.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(ocho.Name)) * Convert.ToDouble(ocho.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(nueve.Name)) * Convert.ToDouble(nueve.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unocero.Name)) * Convert.ToDouble(unocero.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unodos.Name)) * Convert.ToDouble(unodos.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unotres.Name)) * Convert.ToDouble(unotres.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unocuatro.Name)) * Convert.ToDouble(unocuatro.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unocinco.Name)) * Convert.ToDouble(unocinco.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unoseis.Name)) * Convert.ToDouble(unoseis.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unosiete.Name)) * Convert.ToDouble(unosiete.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unoocho.Name)) * Convert.ToDouble(unoocho.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unonueve.Name)) * Convert.ToDouble(unonueve.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(doscero.Name)) * Convert.ToDouble(doscero.Text)+ controlMenuCarta.getPrecioAlimento( ConverterLN.stringToInt(dosuno.Name))*Convert.ToDouble(dosuno.Text) +controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dosdos.Name)) * Convert.ToDouble(dosdos.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dostres.Name)) * Convert.ToDouble(dostres.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(doscuatro.Name)) * Convert.ToDouble(doscuatro.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(doscinco.Name)) * Convert.ToDouble(doscinco.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dosseis.Name)) * Convert.ToDouble(dosseis.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dossiete.Name)) * Convert.ToDouble(dossiete.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dosocho.Name)) * Convert.ToDouble(dosocho.Text)+ controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dosnueve.Name)) * Convert.ToDouble(dosnueve.Text)+ ConverterLN.stringToInt(trescero.Name)*Convert.ToDouble(trescero.Text) }";
+        }
+        private void sumaTotal2(double result)
+        {
+            labelCountTotal.Text = $"{Convert.ToDouble(labelCountTotal.Text) + result}";
+            //$"{controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(uno.Name)) * Convert.ToDouble(uno.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dos.Name)) * Convert.ToDouble(dos.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(tres.Name)) * Convert.ToDouble(tres.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(cuatro.Name)) * Convert.ToDouble(cuatro.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(cinco.Name)) * Convert.ToDouble(cinco.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(seis.Name)) * Convert.ToDouble(seis.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(siete.Name)) * Convert.ToDouble(siete.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(ocho.Name)) * Convert.ToDouble(ocho.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(nueve.Name)) * Convert.ToDouble(nueve.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unocero.Name)) * Convert.ToDouble(unocero.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unodos.Name)) * Convert.ToDouble(unodos.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unotres.Name)) * Convert.ToDouble(unotres.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unocuatro.Name)) * Convert.ToDouble(unocuatro.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unocinco.Name)) * Convert.ToDouble(unocinco.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unoseis.Name)) * Convert.ToDouble(unoseis.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unosiete.Name)) * Convert.ToDouble(unosiete.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unoocho.Name)) * Convert.ToDouble(unoocho.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unonueve.Name)) * Convert.ToDouble(unonueve.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(doscero.Name)) * Convert.ToDouble(dosuno.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dosdos.Name)) * Convert.ToDouble(dostres.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(doscuatro.Name)) * Convert.ToDouble(doscuatro.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(doscinco.Name)) * Convert.ToDouble(doscinco.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dosseis.Name)) * Convert.ToDouble(dosseis.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dossiete.Name)) * Convert.ToDouble(dossiete.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dosocho.Name)) * Convert.ToDouble(dosocho.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dosnueve.Name)) * Convert.ToDouble(dosnueve.Text) + ConverterLN.stringToInt(trescero.Name) * Convert.ToDouble(trescero.Text) }";
+        }
+        private void restaTotal2(double result)
+        {
+            labelCountTotal.Text = $"{Convert.ToDouble(labelCountTotal.Text) - result}";
+            //$"{controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(uno.Name)) * Convert.ToDouble(uno.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dos.Name)) * Convert.ToDouble(dos.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(tres.Name)) * Convert.ToDouble(tres.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(cuatro.Name)) * Convert.ToDouble(cuatro.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(cinco.Name)) * Convert.ToDouble(cinco.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(seis.Name)) * Convert.ToDouble(seis.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(siete.Name)) * Convert.ToDouble(siete.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(ocho.Name)) * Convert.ToDouble(ocho.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(nueve.Name)) * Convert.ToDouble(nueve.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unocero.Name)) * Convert.ToDouble(unocero.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unodos.Name)) * Convert.ToDouble(unodos.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unotres.Name)) * Convert.ToDouble(unotres.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unocuatro.Name)) * Convert.ToDouble(unocuatro.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unocinco.Name)) * Convert.ToDouble(unocinco.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unoseis.Name)) * Convert.ToDouble(unoseis.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unosiete.Name)) * Convert.ToDouble(unosiete.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unoocho.Name)) * Convert.ToDouble(unoocho.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(unonueve.Name)) * Convert.ToDouble(unonueve.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(doscero.Name)) * Convert.ToDouble(dosuno.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dosdos.Name)) * Convert.ToDouble(dostres.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(doscuatro.Name)) * Convert.ToDouble(doscuatro.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(doscinco.Name)) * Convert.ToDouble(doscinco.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dosseis.Name)) * Convert.ToDouble(dosseis.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dossiete.Name)) * Convert.ToDouble(dossiete.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dosocho.Name)) * Convert.ToDouble(dosocho.Text) + controlMenuCarta.getPrecioAlimento(ConverterLN.stringToInt(dosnueve.Name)) * Convert.ToDouble(dosnueve.Text) + ConverterLN.stringToInt(trescero.Name) * Convert.ToDouble(trescero.Text) }";
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -243,61 +244,61 @@ namespace restaurantApp
 
         private void button22_Click(object sender, EventArgs e)
         {
-            restaCount(labelCountSix);
+            restaCount(seis);
             sumaTotal();
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
-            sumaCount(labelCountSix);
+            sumaCount(seis);
             sumaTotal();
         }
 
         private void button30_Click(object sender, EventArgs e)
         {
-            restaCount(labelCountSeven);
+            restaCount(siete);
             sumaTotal();
         }
 
         private void button29_Click(object sender, EventArgs e)
         {
-            sumaCount(labelCountSeven);
+            sumaCount(siete);
             sumaTotal();
         }
 
         private void button38_Click(object sender, EventArgs e)
         {
-            restaCount(labelCountEight);
+            restaCount(ocho);
             sumaTotal();
         }
 
         private void button37_Click(object sender, EventArgs e)
         {
-            sumaCount(labelCountEight);
+            sumaCount(ocho);
             sumaTotal();
         }
 
         private void button33_Click(object sender, EventArgs e)
         {
-            sumaCount(labelCountNine);
+            sumaCount(nueve);
             sumaTotal();
         }
 
         private void button25_Click(object sender, EventArgs e)
         {
-            sumaCount(labelCountTen);
+            sumaCount(unocero);
             sumaTotal();
         }
 
         private void button34_Click(object sender, EventArgs e)
         {
-            restaCount(labelCountNine);
+            restaCount(nueve);
             sumaTotal();
         }
 
         private void button26_Click(object sender, EventArgs e)
         {
-            restaCount(labelCountTen);
+            restaCount(unocero);
             sumaTotal();
         }
 
@@ -308,61 +309,61 @@ namespace restaurantApp
 
         private void button42_Click(object sender, EventArgs e)
         {
-            restaCount(labelCountEleven);
+            restaCount(unouno);
             sumaTotal();
         }
 
         private void button50_Click(object sender, EventArgs e)
         {
-            restaCount(labelCountTwelve);
+            restaCount(unodos);
             sumaTotal();
         }
 
         private void button58_Click(object sender, EventArgs e)
         {
-            restaCount(labelCountThirteen);
+            restaCount(unotres);
             sumaTotal();
         }
 
         private void button54_Click(object sender, EventArgs e)
         {
-            restaCount(labelCountFourteen);
+            restaCount(unocuatro);
             sumaTotal();
         }
 
         private void button46_Click(object sender, EventArgs e)
         {
-            restaCount(labelCountFifteen);
+            restaCount(unocinco);
             sumaTotal();
         }
 
         private void button45_Click(object sender, EventArgs e)
         {
-            sumaCount(labelCountFifteen);
+            sumaCount(unocinco);
             sumaTotal();
         }
 
         private void button53_Click(object sender, EventArgs e)
         {
-            sumaCount(labelCountFourteen);
+            sumaCount(unocuatro);
             sumaTotal();
         }
 
         private void button57_Click(object sender, EventArgs e)
         {
-            sumaCount(labelCountThirteen);
+            sumaCount(unotres);
             sumaTotal();
         }
 
         private void button49_Click(object sender, EventArgs e)
         {
-            sumaCount(labelCountTwelve);
+            sumaCount(unodos);
             sumaTotal();
         }
 
         private void button41_Click(object sender, EventArgs e)
         {
-            sumaCount(labelCountEleven);
+            sumaCount(unouno);
             sumaTotal();
         }
 
@@ -442,13 +443,358 @@ namespace restaurantApp
                 int idAlimento = ConverterLN.stringToInt(cinco.Name);
                 list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(cinco.Text)) { });
             }
+            else if (Convert.ToInt32(seis.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(seis.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(seis.Text)) { });
+            }
+            else if (Convert.ToInt32(siete.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(siete.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(siete.Text)) { });
+            }
+            else if (Convert.ToInt32(ocho.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(ocho.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(ocho.Text)) { });
+            }
+            else if (Convert.ToInt32(nueve.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(nueve.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(nueve.Text)) { });
+            }
+            else if (Convert.ToInt32(unocero.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(unocero.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(unocero.Text)) { });
+            }
+            else if (Convert.ToInt32(unouno.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(unouno.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(unouno.Text)) { });
+            }
+            else if (Convert.ToInt32(unodos.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(unodos.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(unodos.Text)) { });
+            }
+            else if (Convert.ToInt32(unotres.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(unotres.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(unotres.Text)) { });
+            }
+            else if (Convert.ToInt32(unocuatro.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(unocuatro.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(unocuatro.Text)) { });
+            }
+            else if (Convert.ToInt32(unocinco.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(unocinco.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(unocinco.Text)) { });
+            }
+            else if (Convert.ToInt32(unoseis.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(unoseis.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(unoseis.Text)) { });
+            }
+            else if (Convert.ToInt32(unosiete.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(unosiete.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(unosiete.Text)) { });
+            }
+            else if (Convert.ToInt32(unoocho.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(unoocho.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(unoocho.Text)) { });
+            }
+            else if (Convert.ToInt32(unonueve.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(unonueve.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(unonueve.Text)) { });
+            }
+            else if (Convert.ToInt32(doscero.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(doscero.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(doscero.Text)) { });
+            }
+            else if (Convert.ToInt32(dosdos.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(dosdos.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(dosdos.Text)) { });
+            }
+            else if (Convert.ToInt32(dostres.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(dostres.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(dostres.Text)) { });
+            }
+            else if (Convert.ToInt32(doscuatro.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(doscuatro.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(doscuatro.Text)) { });
+            }
+            else if (Convert.ToInt32(doscinco.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(doscinco.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(doscinco.Text)) { });
+            }
+            else if (Convert.ToInt32(dosseis.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(dosseis.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(dosseis.Text)) { });
+            }
+            else if (Convert.ToInt32(dossiete.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(dossiete.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(dossiete.Text)) { });
+            }
+            else if (Convert.ToInt32(dosocho.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(dosocho.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(dosocho.Text)) { });
+            }
+            else if (Convert.ToInt32(cinco.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(dosnueve.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(dosnueve.Text)) { });
+            }
+            else if (Convert.ToInt32(trescero.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(trescero.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(trescero.Text)) { });
+            }
             else {
                 MessageBox.Show("No tiene ningun alimento seleccionado");
-                buttonPCarta.BackColor = Color.Red;
-            
+                buttonPCarta.BackColor = Color.Red;            
             }
-            MessageBox.Show("Pedido Realizado");
-            await controlMenuCarta.PostCarta(Convert.ToInt32(mesaId), list, DateTime.Now);
+            DialogResult result = MessageBox.Show("Seguro de realizar el pedido?", "Advertencia", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("Pedido Realizado", "PedidoRealizado");
+                await controlMenuCarta.PostCarta(Convert.ToInt32(mesaId), list, DateTime.Now);
+                buttonPCarta.BackColor = Color.Transparent;
+                defaultLabelCount();
+            }
+        }
+
+        private void label48_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button62_Click(object sender, EventArgs e)
+        {
+            restaCount(unoseis);
+            sumaTotal();
+        }
+
+        private void button70_Click(object sender, EventArgs e)
+        {
+            restaCount(unosiete);
+            sumaTotal();
+        }
+
+        private void button78_Click(object sender, EventArgs e)
+        {
+            restaCount(unoocho);
+            sumaTotal();
+        }
+
+        private void button74_Click(object sender, EventArgs e)
+        {
+            restaCount(unonueve);
+            sumaTotal();
+        }
+
+        private void button66_Click(object sender, EventArgs e)
+        {
+            restaCount(doscero);
+            sumaTotal();
+        }
+
+        private void button61_Click(object sender, EventArgs e)
+        {
+            sumaCount(unoseis);
+            sumaTotal();
+        }
+
+        private void button69_Click(object sender, EventArgs e)
+        {
+            sumaCount(unosiete);
+            sumaTotal();
+        }
+
+        private void button77_Click(object sender, EventArgs e)
+        {
+            sumaCount(unoocho);
+            sumaTotal();
+        }
+
+        private void button73_Click(object sender, EventArgs e)
+        {
+            sumaCount(unonueve);
+            sumaTotal();
+        }
+
+        private void button65_Click(object sender, EventArgs e)
+        {
+            sumaCount(doscero);
+            sumaTotal();
+        }
+
+        private void button82_Click(object sender, EventArgs e)
+        {
+            restaCount(dosuno);
+            sumaTotal();
+        }
+
+        private void button90_Click(object sender, EventArgs e)
+        {
+            restaCount(dosdos);
+            sumaTotal();
+        }
+
+        private void button98_Click(object sender, EventArgs e)
+        {
+            restaCount(dostres);
+            sumaTotal();
+        }
+
+        private void button94_Click(object sender, EventArgs e)
+        {
+            restaCount(doscuatro);
+            sumaTotal();
+        }
+
+        private void button86_Click(object sender, EventArgs e)
+        {
+            restaCount(doscinco);
+            sumaTotal();
+        }
+
+        private void button81_Click(object sender, EventArgs e)
+        {
+            sumaCount(dosuno);
+            sumaTotal();
+        }
+
+        private void button89_Click(object sender, EventArgs e)
+        {
+            sumaCount(dosdos);
+            sumaTotal();
+        }
+
+        private void button97_Click(object sender, EventArgs e)
+        {
+            sumaCount(dostres);
+            sumaTotal();
+        }
+
+        private void button93_Click(object sender, EventArgs e)
+        {
+            sumaCount(doscuatro);
+            sumaTotal();
+        }
+
+        private void button85_Click(object sender, EventArgs e)
+        {
+            sumaCount(doscinco);
+            sumaTotal();
+        }
+
+        private void button102_Click(object sender, EventArgs e)
+        {
+            restaCount(dosseis);
+            sumaTotal();
+        }
+
+        private void button110_Click(object sender, EventArgs e)
+        {
+            restaCount(dossiete);
+            sumaTotal();
+        }
+
+        private void button118_Click(object sender, EventArgs e)
+        {
+            restaCount(dosocho);
+            sumaTotal();
+        }
+
+        private void button114_Click(object sender, EventArgs e)
+        {
+            restaCount(dosnueve);
+            sumaTotal();
+        }
+
+        private void button106_Click(object sender, EventArgs e)
+        {
+            restaCount(trescero);
+            sumaTotal();
+        }
+
+        private void button101_Click(object sender, EventArgs e)
+        {
+            sumaCount(dosseis);
+            sumaTotal();
+        }
+
+        private void button109_Click(object sender, EventArgs e)
+        {
+            sumaCount(dossiete);
+            sumaTotal();
+        }
+
+        private void button117_Click(object sender, EventArgs e)
+        {
+            sumaCount(dosocho);
+            sumaTotal();
+        }
+
+        private void button113_Click(object sender, EventArgs e)
+        {
+            sumaCount(dosnueve);
+            sumaTotal();
+        }
+
+        private void button105_Click(object sender, EventArgs e)
+        {
+            sumaCount(trescero);
+            sumaTotal();
+        }
+        public void defaultLabelCount() {
+            uno.Text = $"{0}";
+            dos.Text = $"{0}";
+            tres.Text = $"{0}";
+            cuatro.Text = $"{0}";
+            cinco.Text = $"{0}";
+            seis.Text = $"{0}";
+            siete.Text = $"{0}";
+            ocho.Text = $"{0}";
+            nueve.Text = $"{0}";
+            unocero.Text = $"{0}";
+            unodos.Text = $"{0}";
+            unotres.Text = $"{0}";
+            unocuatro.Text = $"{0}";
+            unocinco.Text = $"{0}";
+            unoseis.Text = $"{0}";
+            unosiete.Text = $"{0}";
+            unoocho.Text = $"{0}";
+            unonueve.Text = $"{0}";
+            doscero.Text = $"{0}";
+            dosuno.Text = $"{0}";
+            dosdos.Text = $"{0}";
+            dostres.Text = $"{0}";
+            doscuatro.Text = $"{0}";
+            doscinco.Text = $"{0}";
+            dosseis.Text = $"{0}";
+            dossiete.Text = $"{0}";
+            dosocho.Text = $"{0}";
+            dosnueve.Text = $"{0}";
+            trescero.Text = $"{0}";
+
+            uno.Text = $"{0}";
+
+
 
         }
     }
