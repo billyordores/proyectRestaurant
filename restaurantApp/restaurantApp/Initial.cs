@@ -35,12 +35,14 @@ namespace restaurantApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Form1 frm1 = new Form1();
-            //frm1.Show(this);
-            //frm1.Activate();
+            Form1 frm1 = new Form1(getIdMesa());
+            frm1.Show(this);
+            frm1.Activate();
             //this.Hide();
         }
-
+        public decimal getIdMesa() {
+            return numericMesaId.Value;
+        }
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
 

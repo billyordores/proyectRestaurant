@@ -8,3 +8,16 @@ C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en 
 C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en Paralelo\gitProyect\proyectRestaurant\restaurantApp\controlChef\obj\Debug\controlChef.csproj.CoreCompileInputs.cache
 C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en Paralelo\gitProyect\proyectRestaurant\restaurantApp\controlChef\obj\Debug\controlChef.exe
 C:\Users\Billy\Documents\II\Semestre I\Sistemas Distribuidos y Programación en Paralelo\gitProyect\proyectRestaurant\restaurantApp\controlChef\obj\Debug\controlChef.pdb
+C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\controlChef\bin\Debug\controlChef.exe.config
+C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\controlChef\bin\Debug\controlChef.exe
+C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\controlChef\bin\Debug\controlChef.pdb
+C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\controlChef\obj\Debug\controlChef.csproj.AssemblyReference.cache
+C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\controlChef\obj\Debug\controlChef.csproj.SuggestedBindingRedirects.cache
+C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\controlChef\obj\Debug\controlChef.Form1.resources
+C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\controlChef\obj\Debug\controlChef.Properties.Resources.resources
+C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\controlChef\obj\Debug\controlChef.csproj.GenerateResource.cache
+C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\controlChef\obj\Debug\controlChef.csproj.CoreCompileInputs.cache
+C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\controlChef\obj\Debug\controlChef.exe
+C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\controlChef\obj\Debug\controlChef.pdb
+C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\controlChef\obj\Debug\controlChef.HisorialForm.resources
+C:\Users\Billy\Documents\II\Semestre I\Programación en Paralelo\proyectRestaurant\restaurantApp\controlChef\obj\Debug\controlChef.PedidosForm.resources

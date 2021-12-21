@@ -1,4 +1,5 @@
-﻿using System;
+﻿using java.lang;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,11 +23,14 @@ namespace restaurantApp
         double optionEight = 5.25;
         double optionNine = 6.00;
         double optionTen = 8.45;
-        
-        
-        public carta()
+
+        string[][] list = new string[30][];
+        public decimal mesaId { get; set; }
+
+
+        public carta(decimal mesaId)
         {
-            
+            this.mesaId = mesaId;
             InitializeComponent();
         }
 
@@ -97,13 +101,13 @@ namespace restaurantApp
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            restaCount(labelCountOne);
+            restaCount(uno);
             sumaTotal();
         }
 
         private void buttonCountSumOne_Click(object sender, EventArgs e)
         {
-            sumaCount(labelCountOne);
+            sumaCount(uno);
             sumaTotal();
         }
 
@@ -138,49 +142,49 @@ namespace restaurantApp
 
         private void button6_Click(object sender, EventArgs e)
         {
-            restaCount(labelCountTwo);
+            restaCount(dos);
             sumaTotal();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            sumaCount(labelCountTwo);
+            sumaCount(dos);
             sumaTotal();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            restaCount(labelCountThree);
-            sumaTotal();
+            restaCount(tres);
+            //sumaTotal();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            sumaCount(labelCountThree);
-            sumaTotal();
+            sumaCount(tres);
+            //sumaTotal();
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            restaCount(labelCountFour);
-            sumaTotal();
+            restaCount(cuatro);
+            //sumaTotal();
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            sumaCount(labelCountFour);
+            sumaCount(cuatro);
             sumaTotal();
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
-            restaCount(labelCountFive);
+            restaCount(cinco);
             sumaTotal();
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
-            sumaCount(labelCountFive);
+            sumaCount(cinco);
             sumaTotal();
         }
 
@@ -189,7 +193,7 @@ namespace restaurantApp
             
         }
         private void sumaTotal() {
-             labelCountTotal.Text = $"{optionOne * Convert.ToDouble(labelCountOne.Text) + optionTwo * Convert.ToDouble(labelCountTwo.Text) +  optionThree * Convert.ToDouble(labelCountThree.Text) + optionFour * Convert.ToDouble(labelCountFour.Text) + optionFive * Convert.ToDouble(labelCountFive.Text) + optionSix * Convert.ToDouble(labelCountSix.Text) + optionSeven * Convert.ToDouble(labelCountSeven.Text) + optionEight * Convert.ToDouble(labelCountEight.Text) + optionNine * Convert.ToDouble(labelCountNine.Text) + optionTen * Convert.ToDouble(labelCountTen.Text)}";
+             //labelCountTotal.Text = $"{optionOne * Convert.ToDouble(labelCountOne.Text) + optionTwo * Convert.ToDouble(labelCountTwo.Text) +  optionThree * Convert.ToDouble(labelCountThree.Text) + optionFour * Convert.ToDouble(labelCountFour.Text) + optionFive * Convert.ToDouble(labelCountFive.Text) + optionSix * Convert.ToDouble(labelCountSix.Text) + optionSeven * Convert.ToDouble(labelCountSeven.Text) + optionEight * Convert.ToDouble(labelCountEight.Text) + optionNine * Convert.ToDouble(labelCountNine.Text) + optionTen * Convert.ToDouble(labelCountTen.Text)}";
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -369,6 +373,82 @@ namespace restaurantApp
 
         private void groupBox56_Enter(object sender, EventArgs e)
         {
+
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelCountTwo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox5_Enter(object sender, EventArgs e)
+        {
+
+        }
+        //Metodos
+        
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private  async void button119_Click(object sender, EventArgs e)
+        {
+            List<AlimentoCantidad> list = new List<AlimentoCantidad>();
+            
+            if (Convert.ToInt32(uno.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(uno.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(uno.Text)) {});
+            }
+            else if (Convert.ToInt32(dos.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(dos.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(dos.Text)) { });
+            }
+            else if (Convert.ToInt32(tres.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(tres.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(tres.Text)) { });
+            }
+            else if (Convert.ToInt32(cuatro.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(cuatro.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(cuatro.Text)) { });
+            }
+            else if (Convert.ToInt32(cinco.Text) > 0)
+            {
+                int idAlimento = ConverterLN.stringToInt(cinco.Name);
+                list.Add(new AlimentoCantidad(idAlimento, Convert.ToInt32(cinco.Text)) { });
+            }
+            else {
+                MessageBox.Show("No tiene ningun alimento seleccionado");
+                buttonPCarta.BackColor = Color.Red;
+            
+            }
+            MessageBox.Show("Pedido Realizado");
+            await controlMenuCarta.PostCarta(Convert.ToInt32(mesaId), list, DateTime.Now);
 
         }
     }

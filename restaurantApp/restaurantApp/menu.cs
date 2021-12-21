@@ -15,8 +15,10 @@ namespace restaurantApp
 {
     public partial class menu : Form
     {
-        public menu()
+        decimal idMesa { get; set; }
+        public menu(decimal idMesa)
         {
+            this.idMesa = idMesa;
             InitializeComponent();
             addEntrante();
         }
@@ -141,7 +143,7 @@ namespace restaurantApp
                 int pointE=21, pointPF = 21, pointP=21, pointB=21;
                 int tabIndexE=0,tabIndexPF = 0, tabIndexP=0, tabIndexB=0;
 
-                foreach (Alimento value in controlMenu.GetAlimentos())
+                foreach (Alimento value in controlMenuCarta.GetAlimentos())
                 {
                     if (value.TipoPlatilloId ==1) {
                         RadioButton rdo = new RadioButton();
@@ -295,7 +297,7 @@ namespace restaurantApp
             }
             else
             {
-                await controlMenu.Post(1, platilloOne, platilloTwo, platilloThree, platilloFour, DateTime.Now, 1);
+                await controlMenuCarta.Post(Convert.ToInt32(idMesa), platilloOne, platilloTwo, platilloThree, platilloFour, DateTime.Now, 1);
                 MessageBox.Show("Pedido Realizado");
                 foreach (Control ctrl in groupBoxEM.Controls)
                 {
@@ -346,6 +348,7 @@ namespace restaurantApp
                     }
                 }
                 buttonPM.BackColor = Color.Transparent;
+                
 
             }
         }

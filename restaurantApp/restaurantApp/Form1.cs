@@ -13,11 +13,11 @@ namespace restaurantApp
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        decimal idMesa { get; set; }
+        public Form1(decimal idMesa)
         {
-            
-            InitializeComponent();
-            
+            this.idMesa= idMesa;
+            InitializeComponent();            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -26,10 +26,8 @@ namespace restaurantApp
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            //Initial init = new Initial();
-            //init.Show();
-            //this.Hide();
+        {            
+            this.Close();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -80,12 +78,12 @@ namespace restaurantApp
 
         private void button2_Click(object sender, EventArgs e)
         {
-            openPanel(new menu());
+            openPanel(new menu(idMesa));
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            openPanel(new carta());
+            openPanel(new carta(idMesa));
         }
 
         private void button4_Click(object sender, EventArgs e)

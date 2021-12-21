@@ -37,5 +37,30 @@ namespace controlChef
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            openPanel(new PedidosForm());
+        }
+        private void openPanel(object panelOne)
+        {
+            if (this.panelContainerChef.Controls.Count > 0)
+            {
+                this.panelContainerChef.Controls.RemoveAt(0);
+            }
+            Form pOne = panelOne as Form;
+            pOne.TopLevel = false;
+            labelWelcome.Visible = false;
+            pictureBoxWelcome.Visible = false;
+            pOne.Dock = DockStyle.Fill;
+            this.panelContainerChef.Controls.Add(pOne);
+            this.panelContainerChef.Tag = pOne;
+            pOne.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            openPanel(new HisorialForm());
+        }
     }
 }
